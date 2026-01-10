@@ -124,7 +124,7 @@ export const websimStubsJs = `
                                 }
 
                                 // Map amount to SKU
-                                const sku = `tip_${data.credits}_gold`;
+                                const sku = `tip_\${data.credits}_gold`;
                                 console.log("[Polyfill] Initiating purchase for:", sku);
                                 
                                 const result = await window.purchase(sku);
